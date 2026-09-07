@@ -1,0 +1,11 @@
+# Nothing sensitive is generated in-tree, but keep the repo tidy.
+*.tmp
+*.bak
+*.log
+*~
+.DS_Store
+
+# Grok Meter stores no secrets in-tree. It only ever READS:
+#   ~/.grok/auth.json                         (token written by `grok login`)
+# and writes a usage snapshot (no token) to:
+#   ~/.config/grok-meter/last.json
